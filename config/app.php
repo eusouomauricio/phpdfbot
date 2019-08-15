@@ -182,6 +182,7 @@ return [
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
         Dacastro4\LaravelGmail\LaravelGmailServiceProvider::class,
         JD\Cloudder\CloudderServiceProvider::class,
+        App\Providers\BotMan\DriverServiceProvider::class,
     ],
 
     /*
