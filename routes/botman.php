@@ -7,7 +7,8 @@ $botman = resolve('botman');
 
 $dialogflow = ApiAi::create(env('DIALOGFLOW_TOKEN'))->listenForAction();
 $botman->middleware->received($dialogflow);
-$botman->hears('.*', function (BotMan $bot) {
+$botman->hears('(.*)', function (BotMan $bot) {
+    \Illuminate\Support\Facades\Log::info('TESTE', [123123]);
 
     $extras = $bot->getMessage()->getExtras();
     $apiReply = $extras['apiReply'];
