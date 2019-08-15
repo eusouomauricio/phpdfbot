@@ -34,10 +34,10 @@
 <body>
 <div class="container">
     <div class="content" id="app">
-        <botman-tinker api-endpoint="/botman"></botman-tinker>
+        <botman-tinker api-endpoint="{{ url("/botman") }}"></botman-tinker>
     </div>
 </div>
 
-<script src="{{ public_path('/js/app.js') }}"></script>
+<script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>
