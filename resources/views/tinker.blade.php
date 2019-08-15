@@ -38,6 +38,6 @@
     </div>
 </div>
 
-<script src="/js/app.js"></script>
+<script src="{{ public_path('/js/app.js') }}"></script>
 </body>
 </html>
