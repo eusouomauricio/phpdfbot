@@ -8,14 +8,14 @@ use BotMan\BotMan\Messages\Outgoing\Question;
 use BotMan\BotMan\Messages\Outgoing\Actions\Button;
 use BotMan\BotMan\Messages\Conversations\Conversation;
 
-class ExampleConversation extends Conversation
+class StartConversation extends Conversation
 {
     /**
      * First question
      */
     public function askReason()
     {
-        $question = Question::create("Huh - you woke me up. What do you need?")
+        $question = Question::create('Ola, eu sou o DevBot assistente do @phpdf. Em que posso te ajudar?')
             ->fallback('Unable to ask question')
             ->callbackId('ask_reason')
             ->addButtons([
